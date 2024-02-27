@@ -73,6 +73,7 @@ export const SearchFlightsForm = () => {
         sx={{
           justifyContent: "start",
           width: "100%",
+          mb: 2,
         }}
       >
         <RadioGroup

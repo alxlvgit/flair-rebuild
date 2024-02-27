@@ -2,13 +2,18 @@ import { Button, Menu, MenuItem, styled } from "@mui/material";
 import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { LanguageSelect } from "./LanguageSelect";
+import { ProfileMenu } from "./ProfileMenu";
 
 interface StyledMenuProps {
   menuWidth: string;
 }
 
 const StyledButton = styled(Button)({
-  padding: "30px 15px",
+  padding: "24px 15px",
+  lineHeight: "1.3",
+  ":hover": {
+    color: "#acff99",
+  },
 });
 
 const StyledMenuItem = styled(MenuItem)({
@@ -102,8 +107,8 @@ export const MainMenuItems = () => {
   };
 
   return (
-    <div className="w-full flex justify-between">
-      <div className="w-full flex flex-wrap justify-center">
+    <div className="grid w-full grid-cols-4 gap-4">
+      <div className="w-full col-span-3 flex justify-center">
         <StyledButton
           id="basic-button"
           aria-controls={dealsAnchorEl ? "deals-menu" : undefined}
@@ -150,20 +155,13 @@ export const MainMenuItems = () => {
         </StyledButton>
         <StyledButton
           id="basic-button"
-          aria-haspopup="true"
-          onClick={handleClick}
-          sx={{ color: "white" }}
-        >
-          Optional fees
-        </StyledButton>
-        <StyledButton
-          id="basic-button"
           aria-controls={supportAnchorEl ? "basic-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={supportAnchorEl ? "true" : undefined}
           onClick={handleSupportClick}
           sx={{ color: selectedMenuItem === "support" ? "#acff99" : "white" }}
           endIcon={<KeyboardArrowDownIcon />}
+          // size="small"
         >
           Support
         </StyledButton>
@@ -211,6 +209,9 @@ export const MainMenuItems = () => {
             role: "menu",
           }}
         >
+          <StyledMenuItem onClick={handleMenuClose}>
+            Optional fees
+          </StyledMenuItem>
           <StyledMenuItem onClick={handleMenuClose}>Baggage</StyledMenuItem>
           <StyledMenuItem onClick={handleMenuClose}>Seating</StyledMenuItem>
           <StyledMenuItem onClick={handleMenuClose}>
@@ -232,12 +233,15 @@ export const MainMenuItems = () => {
           <StyledMenuItem onClick={handleMenuClose}>Feedback</StyledMenuItem>
         </StyledMenu>
       </div>
-      <LanguageSelect
-        languageAnchorEl={languageAnchorEl}
-        handleMenuClose={handleMenuClose}
-        selectedMenuItem={selectedMenuItem}
-        handleClick={handleLanguageClick}
-      />
+      <div className="flex col-span-1 justify-end">
+        <LanguageSelect
+          languageAnchorEl={languageAnchorEl}
+          handleMenuClose={handleMenuClose}
+          selectedMenuItem={selectedMenuItem}
+          handleClick={handleLanguageClick}
+        />
+        <ProfileMenu />
+      </div>
     </div>
   );
 };

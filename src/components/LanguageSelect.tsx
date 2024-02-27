@@ -28,17 +28,21 @@ export const LanguageSelect = ({
         aria-controls={languageAnchorEl ? "language-menu" : undefined}
         aria-expanded={languageAnchorEl ? "true" : undefined}
         sx={{
+          ":hover": {
+            borderColor: "#acff99",
+          },
           color: selectedMenuItem === "language" ? "#acff99" : "white",
           border:
             selectedMenuItem === "language"
               ? "1px solid #acff99"
               : "1px solid white",
           borderRadius: "40px",
-          padding: "8px 30px",
+          padding: "6px 20px",
           height: "fit-content",
-          margin: "auto",
+          my: "auto",
         }}
         endIcon={<KeyboardArrowDownIcon />}
+        size="small"
       >
         {selectedItem ? selectedItem : "EN"}
       </Button>
