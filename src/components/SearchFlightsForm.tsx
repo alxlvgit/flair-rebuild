@@ -32,13 +32,15 @@ export const SearchFlightsForm = () => {
   };
   return (
     <div className="flex flex-col items-center min-h-80 justify-center rounded-2xl py-6 lg:py-0 sm:px-8 px-4 border border-gray-100 mb-12  mx-auto w-full shadow-lg">
-      <div className="flex w-full justify-center sm:justify-start">
+      <div className="flex w-full overflow-x-auto justify-center sm:justify-start">
         <Tabs
           value={tabValue}
           onChange={handleTabChange}
           classes={{
-            root: "text-[0.7rem] sm:text-sm",
+            root: "text-[0.7rem] sm:text-sm w-full",
           }}
+          variant="scrollable"
+          visibleScrollbar
           sx={{
             "& .MuiTabs-indicator": { background: "#7008a0" },
             "& .MuiTab-textColorPrimary": { color: "black" },

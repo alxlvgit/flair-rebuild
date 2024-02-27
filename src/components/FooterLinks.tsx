@@ -50,9 +50,15 @@ const FooterLinks = () => {
       ))}
       <div className="flex flex-col w-full items-start  h-full align-top justify-start">
         <h1 className="text-xl font-bold p-2">Contact Us</h1>
-        <p className="p-2 text-sm">Customer Service</p>
-        <p className="p-2 text-sm">Reservations</p>
-        <p className="p-2 text-sm">Group Sales</p>
+        <a href="#" className="p-2 text-sm text-gray-200 hover:underline">
+          Customer Service
+        </a>
+        <a href="#" className="p-2 text-sm text-gray-200 hover:underline">
+          Reservations
+        </a>
+        <a href="#" className="p-2 text-sm text-gray-200 hover:underline">
+          Group Sales
+        </a>
         <div className="flex items-center justify-center w-full mt-8 p-2">
           <div className="flex items-center w-full justify-center sm:justify-start gap-2 m-auto">
             <a

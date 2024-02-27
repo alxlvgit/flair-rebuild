@@ -7,10 +7,15 @@ import {
   ListItemIcon,
   IconButton,
   Menu,
+  SxProps,
 } from "@mui/material";
 import React from "react";
 
-export const ProfileMenu = () => {
+export const ProfileMenu = ({
+  iconButtonStyle,
+}: {
+  iconButtonStyle?: SxProps;
+}) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -26,7 +31,7 @@ export const ProfileMenu = () => {
         <IconButton
           onClick={handleClick}
           size="small"
-          sx={{ ml: 2 }}
+          sx={iconButtonStyle}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}

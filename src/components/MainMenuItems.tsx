@@ -240,7 +240,11 @@ export const MainMenuItems = () => {
           selectedMenuItem={selectedMenuItem}
           handleClick={handleLanguageClick}
         />
-        <ProfileMenu />
+        <ProfileMenu
+          iconButtonStyle={{
+            ml: 2,
+          }}
+        />
       </div>
     </div>
   );
