@@ -57,7 +57,7 @@ export const BestDealsContainer = () => {
           borderRadius: "0.5rem",
           background: "#7008a0",
           color: "white",
-          fontWeight: "bold",
+          textTransform: "none",
           "&:hover": {
             background: "#212529",
           },

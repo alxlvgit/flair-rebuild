@@ -88,13 +88,13 @@ export const SearchFlightsForm = () => {
           value={radioValue}
         >
           <FormControlLabel
-            control={<Radio />}
+            control={<Radio size="small" />}
             label="one-way"
             value="one-way"
           />
           <FormControlLabel
             value="round-trip"
-            control={<Radio />}
+            control={<Radio size="small" />}
             label="round trip"
           />
         </RadioGroup>
@@ -273,6 +273,7 @@ export const SearchFlightsForm = () => {
             borderRadius: "0.5rem",
             background: "#7008a0",
             color: "white",
+            textTransform: "none",
             "&:hover": {
               background: "#212529",
             },

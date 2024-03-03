@@ -10,7 +10,7 @@ function App() {
     <>
       <MainMenu />
       <MobileNavbar />
-      <main className="lg:mt-12 mt-24 h-full sm:w-5/6 w-11/12 max-w-screen-2xl mx-auto">
+      <main className="lg:mt-12 mt-24 h-full sm:w-5/6 w-11/12 max-w-screen-xl mx-auto">
         <PromoTile />
         <SearchFlightsForm />
         <BestDealsContainer />
