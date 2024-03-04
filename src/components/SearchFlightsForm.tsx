@@ -108,11 +108,6 @@ export const SearchFlightsForm = () => {
               "& .MuiOutlinedInput-root": {
                 borderRadius: "0.5rem 0rem 0rem 0.5rem",
               },
-
-              "& .MuiOutlinedInput-notchedOutline": {
-                borderRightColor: "transparent",
-                color: "black",
-              },
               " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#7008a0",
               },
@@ -162,9 +157,6 @@ export const SearchFlightsForm = () => {
                 width: "50%",
                 "& .MuiOutlinedInput-root": {
                   borderRadius: "0.5rem 0rem 0rem 0.5rem",
-                },
-                "& .MuiOutlinedInput-notchedOutline": {
-                  borderRightColor: "transparent",
                 },
                 " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                   borderColor: "#7008a0",
