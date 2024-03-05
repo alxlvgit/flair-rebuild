@@ -106,7 +106,8 @@ export const SearchFlightsForm = () => {
             sx={{
               width: "50%",
               "& .MuiOutlinedInput-root": {
-                borderRadius: "0.5rem 0rem 0rem 0.5rem",
+                borderTopRightRadius: "0rem",
+                borderBottomRightRadius: "0rem",
               },
               " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#7008a0",
@@ -125,7 +126,8 @@ export const SearchFlightsForm = () => {
             sx={{
               width: "50%",
               "& .MuiOutlinedInput-root": {
-                borderRadius: "0rem 0.5rem 0.5rem 0rem",
+                borderTopLeftRadius: "0rem",
+                borderBottomLeftRadius: "0rem",
               },
               " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                 borderColor: "#7008a0",
@@ -156,7 +158,8 @@ export const SearchFlightsForm = () => {
               sx={{
                 width: "50%",
                 "& .MuiOutlinedInput-root": {
-                  borderRadius: "0.5rem 0rem 0rem 0.5rem",
+                  borderTopRightRadius: "0rem",
+                  borderBottomRightRadius: "0rem",
                 },
                 " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                   borderColor: "#7008a0",
@@ -174,7 +177,8 @@ export const SearchFlightsForm = () => {
               sx={{
                 width: "50%",
                 "& .MuiOutlinedInput-root": {
-                  borderRadius: "0rem 0.5rem 0.5rem 0rem",
+                  borderTopLeftRadius: "0rem",
+                  borderBottomLeftRadius: "0rem",
                 },
                 " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
                   borderColor: "#7008a0",
