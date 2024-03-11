@@ -5,8 +5,14 @@ declare global {
   namespace JSX {
     interface IntrinsicElements {
       "swiper-container": React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement>,
-        HTMLElement
+        React.HTMLAttributes<HTMLDivElement> & {
+          "slides-per-view"?: string;
+          "pagination-clickable"?: string;
+          pagination?: string;
+          loop?: string;
+          autoplay?: string;
+        },
+        HTMLDivElement
       >;
       "swiper-slide": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
@@ -21,8 +27,8 @@ export const PromoTile = () => {
     <div className="flex lg:flex-row flex-col relative items-center justify-center rounded-2xl mx-auto mb-12 w-full min-h-80 lg:h-80  shadow-lg border border-gray-100">
       <swiper-container
         slides-per-view="1"
-        pagination="true"
         pagination-clickable="true"
+        pagination="true"
         loop="true"
         autoplay="true"
       >
