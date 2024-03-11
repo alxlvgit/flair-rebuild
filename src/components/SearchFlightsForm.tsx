@@ -109,13 +109,13 @@ export const SearchFlightsForm = () => {
                 borderTopRightRadius: "0rem",
                 borderBottomRightRadius: "0rem",
               },
-              " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                borderColor: "#7008a0",
-              },
-              "& .MuiInputLabel-root.Mui-focused": {
+              "& .MuiFormLabel-root.MuiInputLabel-root.Mui-focused": {
                 color: "#7008a0",
-                opacity: 1,
               },
+              "& .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "#7008a0",
+                },
             }}
             label="From"
             variant="outlined"
@@ -129,13 +129,13 @@ export const SearchFlightsForm = () => {
                 borderTopLeftRadius: "0rem",
                 borderBottomLeftRadius: "0rem",
               },
-              " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                borderColor: "#7008a0",
-              },
-              "& .MuiInputLabel-root.Mui-focused": {
+              "& .MuiFormLabel-root.MuiInputLabel-root.Mui-focused": {
                 color: "#7008a0",
-                opacity: 1,
               },
+              "& .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                {
+                  borderColor: "#7008a0",
+                },
             }}
             label="To"
             variant="outlined"
@@ -161,13 +161,13 @@ export const SearchFlightsForm = () => {
                   borderTopRightRadius: "0rem",
                   borderBottomRightRadius: "0rem",
                 },
-                " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#7008a0",
-                },
-                "& .MuiInputLabel-root.Mui-focused": {
+                "& .MuiFormLabel-root.MuiInputLabel-root.Mui-focused": {
                   color: "#7008a0",
-                  opacity: 1,
                 },
+                "& .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                  {
+                    borderColor: "#7008a0",
+                  },
               }}
               label="Departure"
             />
@@ -180,13 +180,13 @@ export const SearchFlightsForm = () => {
                   borderTopLeftRadius: "0rem",
                   borderBottomLeftRadius: "0rem",
                 },
-                " & .Mui-focused .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "#7008a0",
-                },
-                "& .MuiInputLabel-root.Mui-focused": {
+                "& .MuiFormLabel-root.MuiInputLabel-root.Mui-focused": {
                   color: "#7008a0",
-                  opacity: 1,
                 },
+                "& .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
+                  {
+                    borderColor: "#7008a0",
+                  },
               }}
               label="Return"
             />

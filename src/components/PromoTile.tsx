@@ -1,10 +1,38 @@
+import React from "react";
+
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace JSX {
+    interface IntrinsicElements {
+      "swiper-container": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+      "swiper-slide": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+    }
+  }
+}
+
 export const PromoTile = () => {
   return (
     <div className="flex lg:flex-row flex-col relative items-center justify-center rounded-2xl mx-auto mb-12 w-full min-h-80 lg:h-80  shadow-lg border border-gray-100">
-      <img
-        src="/promo.jpg"
-        className="object-cover lg:w-3/5 w-full h-55 lg:h-full lg:rounded-tl-2xl lg:rounded-bl-2xl rounded-t-2xl lg:rounded-tr-none"
-      />
+      <swiper-container
+        slides-per-view="1"
+        pagination="true"
+        pagination-clickable="true"
+        loop="true"
+        autoplay="true"
+      >
+        <swiper-slide>
+          <img src="/spring-promo.png" className="w-full h-full object-cover" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/spring-promo.png" className="w-full h-full object-cover" />
+        </swiper-slide>
+      </swiper-container>
       <div className="flex flex-col justify-center items-center lg:h-full lg:w-2/5 w-full p-4 bg-[#212529] rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none">
         <h1 className="md:text-3xl text-xl text-center font-bold text-white">
           Book your flight
