@@ -46,8 +46,8 @@ export const PromoTile = () => {
         <h1 className="md:text-3xl text-xl text-center font-bold text-white">
           Book your flight
         </h1>
-        <p className="text-white md:text-base text-sm text-center">
-          Spend spring break in the city that never sleeps.
+        <p className="text-gray-300 md:text-base text-sm text-center">
+          Starting from $85 only. Limited time offers.
         </p>
         <button className="bg-[#acff99] sm:text-base text-small text-black rounded-md p-2 md:w-1/2 w-full mt-4 hover:bg-[#8ae68a]">
           Book now
