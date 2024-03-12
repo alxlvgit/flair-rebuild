@@ -36,7 +36,10 @@ export const PromoTile = () => {
           <img src="/spring-promo.png" className="w-full h-full object-cover" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/spring-promo.png" className="w-full h-full object-cover" />
+          <img
+            src="/homepage-banner.png"
+            className="w-full h-full object-cover"
+          />
         </swiper-slide>
       </swiper-container>
       <div className="flex flex-col justify-center items-center lg:h-full lg:w-2/5 w-full p-4 bg-[#212529] rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none">
